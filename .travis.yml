@@ -7,5 +7,7 @@ services:
 script:
   - echo $TRAVIS_CPU_ARCH
   - docker pull ubuntu:18.04
+  - docker run ubuntu:18.04
+  - docker ps -a
   - sudo whoami
   - whoami
