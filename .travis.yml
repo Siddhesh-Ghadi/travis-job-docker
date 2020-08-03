@@ -5,8 +5,10 @@ services:
   - docker
 
 script:
+  - sudo apt-get update
+  - sudo apt-get install xfsprogs -y
   - echo $TRAVIS_CPU_ARCH
-  - sudo /usr/sbin/xfs_info /var/lib/docker/overlay2
+  - sudo xfs_info /var/lib/docker/overlay2
   - docker version
   - docker info
   - docker pull ubuntu:18.04
