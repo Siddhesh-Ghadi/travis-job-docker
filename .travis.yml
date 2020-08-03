@@ -5,17 +5,10 @@ services:
   - docker
 
 script:
-  - sudo apt-get update
-  - sudo apt-get install xfsprogs -y
-  - echo $TRAVIS_CPU_ARCH
-  - sudo xfs_info /var/lib/docker/overlay2
+  - df -h
   - docker version
   - docker info
   - docker pull ubuntu:18.04
   - docker run -dt --name test ubuntu:18.04
-  -  sudo systemctl restart docker
-  - docker run --rm ppc64le/ubuntu:18.04 "ls -la"
-  - docker ps -a
-  - docker exec test bash -c 'uname -a'
   - sudo whoami
   - whoami
