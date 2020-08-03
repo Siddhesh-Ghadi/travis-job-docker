@@ -6,7 +6,7 @@ services:
 
 script:
   - echo $TRAVIS_CPU_ARCH
-  - sudo xfs_info /var/lib/docker/overlay2
+  - sudo /usr/sbin/xfs_info /var/lib/docker/overlay2
   - docker version
   - docker info
   - docker pull ubuntu:18.04
