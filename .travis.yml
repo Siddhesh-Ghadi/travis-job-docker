@@ -1,5 +1,7 @@
-arch: ppc64le
-dist: bionic
+arch: 
+  - ppc64le
+  - amd64
+
 sudo: required
 services:
   - docker
