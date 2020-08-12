@@ -1,6 +1,5 @@
-arch: 
-  - ppc64le
-  - amd64
+arch: ppc64le
+
 
 sudo: required
 services:
