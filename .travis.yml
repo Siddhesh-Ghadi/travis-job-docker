@@ -1,10 +1,8 @@
 arch: ppc64le
-
-
 sudo: required
 services:
   - docker
 
 script:
-  - #docker run -a stdin -a stdout -a stderr -u root ubuntu:18.04 bash -c 'apt update -y && apt install -y git'
   - docker run -t ubuntu:18.04 bash -c 'apt update -y && apt install -y git'
+  - docker run -t centos:7 bash  -c 'yum update -y && yum install -y git'
