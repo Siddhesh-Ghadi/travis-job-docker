@@ -6,5 +6,5 @@ services:
   - docker
 
 script:
-  - docker run -dt ubuntu:18.04 bash -c 'apt update -y && apt install -y git'
+  - docker run -dt -a stdout -a stderr ubuntu:18.04 bash -c 'apt update -y && apt install -y git'
   - docker run -a stdin -a stdout -a stderr -u root ubuntu:18.04 bash -c 'apt update -y && apt install -y git'
