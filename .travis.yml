@@ -4,9 +4,11 @@ services:
   - docker
 
 script:
-  - git config user.name
-  - git config user.email
-  - docker run -t ubuntu:18.04 bash -c 'apt update -y && apt install -f -y wget'
+  - #git config user.name
+  - #git config user.email
+  - cat /etc/fstab 
+  - df -h
+  - docker run -t ubuntu:18.04 bash -c 'cat /etc/fstab && df -h && apt update -y && apt install -f -y wget'
   - #docker run -t ubuntu:18.04 bash -c 'apt-get update -y && apt-get install -y wget'
   - #docker run -t ubuntu:16.04 bash -c 'apt update -y && apt install -f -y wget'
   - #docker run -t ubuntu:16.04 bash -c 'apt-get update -y && apt-get install wget -y'
