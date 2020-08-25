@@ -15,5 +15,5 @@ script:
   - #docker run -t ubuntu:16.04 bash -c 'apt update -y && apt install -f -y wget'
   - #docker run -t ubuntu:16.04 bash -c 'apt-get update -y && apt-get install wget -y'
   - ifconfig
-  - docker run -t ubuntu:18.04 bash -c 'cat /etc/docker/daemon.json'
+  - sudo cat /etc/docker/daemon.json
 
