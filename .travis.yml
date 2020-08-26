@@ -5,7 +5,7 @@ services:
   - docker
 
 script:
-  - sudo apt install maven
-  - docker run -t ubuntu:18.04 bash -c 'apt update -y && apt install -y maven'
-  - docker run -t centos:7 bash  -c 'yum update -y && yum install -y maven'
+  - sudo apt install cmake
+  - docker run -t ubuntu:18.04 bash -c 'apt update -y && apt install -y cmake'
+  - docker run -t centos:7 bash  -c 'yum update -y && yum install -y cmake'
 
