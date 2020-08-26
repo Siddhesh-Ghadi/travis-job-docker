@@ -5,7 +5,6 @@ services:
   - docker
 
 script:
-  - sudo apt install nodejs
-  - docker run -t ubuntu:18.04 bash -c 'apt update -y && apt install -y nodejs'
-  - docker run -t centos:7 bash  -c 'yum update -y && yum install -y nodejs'
+  - docker run -t ubuntu:18.04 bash -c 'apt update -y && apt install -y git'
+  - docker run -t centos:7 bash  -c 'yum update -y && yum install -y git'
 
