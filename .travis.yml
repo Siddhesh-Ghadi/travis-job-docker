@@ -5,15 +5,7 @@ services:
   - docker
 
 script:
-  - #git config user.name
-  - #git config user.email
-  - #cat /etc/fstab 
-  - #df -h
-  - #sudo lsblk
-  - #docker run -t ubuntu:18.04 bash -c 'lsblk && df -h && apt update -y && apt-get -o Acquire::ForceIPv4=true install -y wget'
-  - #docker run -t ubuntu:18.04 bash -c 'apt-get update -y && apt-get install -y wget'
-  - #docker run -t ubuntu:16.04 bash -c 'apt update -y && apt install -f -y wget'
-  - #docker run -t ubuntu:16.04 bash -c 'apt-get update -y && apt-get install wget -y'
-  - ifconfig
-  - sudo cat /etc/docker/daemon.json
+  - sudo apt install maven
+  - docker run -t ubuntu:18.04 bash -c 'apt update -y && apt install -y maven'
+  - docker run -t centos:7 bash  -c 'yum update -y && yum install -y maven'
 
