@@ -13,7 +13,9 @@ Test job for travis-ci
 |3.5|yes|yes|yes|yes|
 |3.6|yes|yes|yes|yes|
 |3.7|yes|yes|yes|no|
-|3.8|yes|yes|yes|no|
+|3.8|yes|yes|yes|yes|
+|3.9|yes|yes|yes|yes|
+|nightly|yes|yes|yes|yes|
 |pypy2|no|no|no|no|
 |pypy3|no|no|no|no|
 
